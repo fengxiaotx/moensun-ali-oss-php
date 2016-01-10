@@ -1,6 +1,6 @@
 {
     "name": "moensun/aliyun-oss",
-    "type": "composer",
+    "type": "library",
     "require": {
         "aliyuncs/oss-sdk-php": "~2.0"
     },
