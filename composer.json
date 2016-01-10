@@ -1,0 +1,23 @@
+{
+    "name": "moensun/aliyun-oss",
+    "type": "composer",
+    "require": {
+        "aliyuncs/oss-sdk-php": "~2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bane.Shi",
+            "email": "fengxiaotx@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload":{
+        "psr-4":{
+            "MoenSun\\aliyun\\oss\\":"src/MoenSun/aliyun/oss/"
+        }
+    }
+}
