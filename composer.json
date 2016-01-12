@@ -2,6 +2,7 @@
     "name": "moensun/aliyun-oss",
     "type": "library",
     "require": {
+        "php": ">=5.5.9",
         "aliyuncs/oss-sdk-php": "~2.0"
     },
     "license": "MIT",
@@ -12,9 +13,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.5.9"
-    },
     "autoload":{
         "psr-4":{
             "MoenSun\\aliyun\\oss\\":"src/MoenSun/aliyun/oss/"
