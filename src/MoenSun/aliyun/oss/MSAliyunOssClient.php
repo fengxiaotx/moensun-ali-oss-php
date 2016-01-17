@@ -34,7 +34,23 @@ class MSAliyunOssClient
 
     public function uploadFile($object, $filePath, $options = array()){
         try{
-            $this->ossClient->uploadDir($this->bucket,$object,$filePath,$options);
+            $this->ossClient->uploadFile($this->bucket,$object,$filePath,$options);
+        }catch(OssException $e){
+            throw new OssException($e);
+        }
+    }
+
+    public function deleteObject($object,$options = null){
+        try{
+            $this->ossClient->deleteObject($this->bucket,$object,$options);
+        }catch(OssException $e){
+            throw new OssException($e);
+        }
+    }
+
+    public function deleteObjects($objects,$options = null){
+        try{
+            $this->ossClient->deleteObjects($this->bucket,$objects,$options);
         }catch(OssException $e){
             throw new OssException($e);
         }
